@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Materialize CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+    <script src="main.js"></script>
+</head>
+
+<style>
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 100;
+
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  .icon-bar :hover {
+      transition: all 0.5s;
+      background-color: rgb(214, 52, 79) !important;
+  }
+  .icon-bar-2 {
+    display: inline-block;
+    margin-top: 7%;
+    text-align: center;
+    padding-top: 2% ;
+    padding-bottom: 2% ;
+    display: none;
+}
+  
+  /* Style the icon bar links */
+  .icon-bar-2 a {
+    text-align: center;
+    padding: 12px;
+    
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  .icon-bar-2 :hover {
+      transition: all 0.5s;
+      background-color: rgb(214, 52, 79) !important;
+  }
+
+
+/*header */
+
+.brand-logo {
+    font-size: 1.5em !important;
+    padding-left: 2% !important;
+}
+
+.navbar-links ul {
+    margin-right: 8% !important;
+}
+.navbar-links ul li a:active {
+    color: rgb(228, 67, 94);
+}
+
+.parallex-text {
+    font-size: 2.5em;
+    padding-top: 48%;
+    
+}
+.section {
+    display: inline-block;
+    text-align: center;
+    padding: 1%;
+} 
+.my-header {
+    height: 520px;
+}
+.donate-button-2 {
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+}
+.donate-med {
+    width: 100%;
+    
+}
+/* Parallax */
+
+ .thisdiv {
+    position: absolute !important; 
+    top: 5%;
+    right: 0;
+    left: 0;
+}
+.thisimg {
+    height: 550px !important;
+}
+
+/***CARDS****/
+
+.card-content {
+    height: 140px;
+}
+.cardsheading {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.birdheading {
+    font-weight: normal;
+    font-style: italic;
+    margin: 5% 13% 2% 13%;
+    font-size: 2.5em;
+    
+}
+.birdpara {
+    margin-bottom: 5%;
+}
+.birddiv {
+    margin: 8% 0;
+}
+/* JOIN US */
+.joinus-img{
+    width: 100%;
+    height: 350px;
+    display: block;
+}
+.joinus {
+    margin: 5% 0;
+}
+.joinus-img-div {
+    padding: 0 !important;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.joinus-para {
+    font-size: 2em;
+}
+.joinus-div {
+    padding-bottom: 5% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* JOIN US ENDED */
+
+/* SIGNUP START */
+.signup-email {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.women-pwr {
+    padding-left: 8% !important;
+    margin: 5% 0;
+}
+.wp-heading {
+    font-size: 1em;
+}
+.signup-div {
+    padding : 0 5% !important;
+    margin: 5% 0;
+}
+.signup-btn{
+    width: 80% !important;
+    font-weight: bold;
+    font-size: 0.7em;
+}
+.quick-links {
+    margin: 5% 0;
+}
+.quick-links ul li  {
+    padding-bottom: 10px !important;
+
+}
+.quick-links ul li a:hover {
+    color: rgb(235, 72, 100) !important;
+    transition: all 0.5s !important;
+}
+.footer-div {
+    padding: 0.5%;
+}
+/* message icon */ /* MODAL */
+.chat-popup {
+    padding-top: 34%;
+    text-align: center;
+}
+.msg-btn {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    border-radius: 50% !important;
+    
+}
+.modal-div {
+    position: fixed !important;
+    bottom: 6%;
+    right: 1% !important;
+    width: 30% !important;
+}
+.happy-icon {
+    font-size: 56px !important;
+    
+}
+.chat-para1 {
+    font-size: 24px;
+}
+.chat-para2 {
+    font-size: 1em;
+}
+.text-area {
+    width: 75%;
+    
+}
+#custom-button {
+    cursor: pointer;
+    padding-top: 1%;
+}
+#emoji {
+    cursor: pointer;
+    padding-top: 1%;
+}
+/* COLLECTION */
+.collection {
+    border: none !important;
+    border-bottom: 1px solid black !important;
+    
+}
+.collection-div-1, .collection-div-2 ,.collection-div-3  {
+    margin: 3% 2% !important;
+    padding: 1% 2% !important;
+}
+.collection-item div{
+    font-size: 1.5em;
+}
+.collection-item {
+    padding-bottom: 2% !important;
+}
+sup, sub {
+    font-size: 0.6em !important;
+}
+sub {
+    padding-right: 3% ;
+}
+.date {
+    font-size: 1.5em;
+}
+
+.our {
+    height: 140px;
+    color: white;
+}
+.our h4 a{
+    font-weight: bold;
+    color: #fff;
+}
+.mission h4 a:hover {
+    color:#f06292;
+    transition: 0.2s;
+}
+.events h4 a:hover {
+    color:#64b5f6;
+    transition: 0.2s;
+}
+.involved h4 a:hover {
+    color:#0d47a1;
+    transition: 0.2s;
+}
+
+a#collection-link1:hover, a#collection-link2:hover, a#collection-link3:hover  {
+    color: rgb(221, 34, 65) !important;
+    transition: all 0.5s;
+}
+.san-frans {
+    font-size: 0.7em !important;
+}
+.onclick-collection1, .onclick-collection2, .onclick-collection3 {
+    font-size: 1em !important;
+    display: none;
+    margin-left: 4%;
+    padding: 1% 2% !important;
+    padding-bottom: 2% !important; 
+    
+}
+a#collection-link1, a#collection-link2, a#collection-link3 {
+    padding-bottom : 4% !important;
+}
+
+@media screen and (max-width: 670px) {
+    header {
+    min-height: 500px;
+    }
+    .section {
+        vertical-align: bottom;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .modal-div {
+        width: 90% !important;
+        height: 90% !important;
+    }
+    .chat-popup {
+        padding-top: 3%;
+    }
+    .icon-bar-2 {
+        display: block;
+    }
+    .icon-bar {
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 1000px) {
+    .btn-register {
+        width: 100% !important;
+        text-align: center;
+        margin: 6% 0 !important;
+
+    }
+    .brand-logo {
+        padding-left: 0 !important;
+    }
+}
+
+
+</style>
+
+<body>
+
+    <!--MY NAVBAR-->
+    <header class="my-header scrollspy" id="home">
+        <div class="navbar-fixed ">
+          <!-- Nav Here -->
+        <div class="navbar-fixed">
+            <nav class="blue lighten-1">
+                <div class="nav-wrapper">
+                    <div class="row">
+                        <div class="col m2">
+                            <a href="#!" class="brand-logo"><b>Women PWR</b></a>
+                            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        </div>
+                        <div class="col m6 offset m2">
+                        <ul class="right hide-on-med-and-down" style="font-weight: bold; background: transparent;">
+                            <li><a href="sass.html">Home</a></li>
+                            <li><a href="badges.html">About</a></li>
+                            <li><a href="badges.html">News</a></li>
+                            <li><a href="badges.html">Contact</a></li>
+                            <li><a href="badges.html">About Us</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col m2 right s12" style="background-color: hotpink; text-align: center; font-size: 1.5em;" >
+                       
+                          <a href="donate.com.pk"><b>DONATE</b></a> 
+                    </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+            <div class=" hide-on-large-only center-align donate-button-2">
+                <a class="waves-effect waves-teal btn pink donate-med ">Donate</a>
+            </div>       
+            
+      
+        <ul class="sidenav" id="mobile-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">About Us</a></li>
+            <li><a href="#join">Support Us</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="parallax-container center thisdiv">
+                <div class="parallax ">
+                  <img src="empower2.jpg" class="thisimg" style="transform: translate3d(-50%, 26.9194px, 0px); opacity: 1;">
+                </div>
+                <div class="section">
+                     <br><br><br><br><br><br><br><br> <h3 style="font-size: 3rem;font-weight: 700; line-height: 1.0; color: #fff; font-family: playfair display; opacity: 1;transform: translate(0); text-align: center !important; -webkit-box-flex: 0;-moz-box-flex: 0; flex: 0 0 58.33333%; flex-grow: 0;
+                    flex-shrink: 0; flex-basis: 58.3333%;position: relative;width: 100%;min-height: 500px;">Empowering Women And Girls World Wide</h3>
+                </div>
+            </div>
+            
+        
+        </header>
+        <!-- The social media icon bar -->
+    <div class="icon-bar #1a237e indigo darken-4">
+            <a href="https://www.facebook.com/wix" class="facebook"><i class="fa fa-facebook"></i></a> 
+            <a href="https://twitter.com/wix" class="twitter"><i class="fa fa-twitter"></i></a> 
+            <a href="https://www.youtube.com/user/Wix" class="youtube"><i class="fa fa-youtube"></i></a> 
+            <a href="https://www.instagram.com/wix/" class="instagram"><i class="fa fa-instagram"></i></a> 
+          </div>
+
+          
+           <!--MY BUTTONS-->
+           
+              <div class="our-div">
+            <div class="row">
+                <div class="our mission col s12 m4 center #f06292 pink lighten-1">
+                    <h4><a href="#">Our Mission</a></h4>
+                    <p class="white-text">Our Goal, Vision & Commitment</p>
+                </div>
+                <div class="our events col s12 m4 center #64b5f6 blue lighten-2">
+                    <h4><a href="#">Our Events</a></h4>
+                    <p>Register & Help Make Change</p>
+                </div>
+                <div class="our involved col s12 m4 center #0d47a1 blue darken-4">
+                    <h4><a href="#">Get Involved</a></h4>
+                    <p>Volunteer, Participate, or Donate</p>
+                </div>
+            </div>
+        </div>
+
+<!--MY CARDS NEWS-->
+<div class="container scrollspy" id="news">
+        <div class="row">
+          <div class="col s12 l12 center-align"><h2><b>Latest News</b></h2></div>
+                <div class="col s12 m6 l4">
+                  <div class="card">
+                        <div class="card-image">
+                                <img src="winner.jpg">
+                                
+                            </div>
+                    <div class="card-content ">
+                      <span class="card-title"><h5 class="cardsheading">Female Robotics Team Wins The Major Award</h5></span>
+                      
+                    </div>
+                    <div class="card-action">
+                        
+                      <p><i class="material-icons left">remove_red_eye</i>Write a comment<!--<i class="material-icons right">favorite_border</i>--> </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m6 l4">
+                        <div class="card">
+                              <div class="card-image">
+                                      <img src="graduate.jpg">
+                                      
+                                  </div>
+                          <div class="card-content ">
+                            <span class="card-title"><h5 class="cardsheading">Women Overtake Men in the College Degrees</h5></span>
+                            
+                          </div>
+                          <div class="card-action">
+                              
+                            <p><i class="material-icons left">remove_red_eye</i>Write a comment <!--<i class="material-icons right">favorite_border</i>--></p>
+                          </div>
+                        </div>
+                      </div>
+    
+    
+                      <div class="col s12 m6 l4">
+                            <div class="card">
+                                  <div class="card-image">
+                                          <img src="parental.jpg">
+                                          
+                                      </div>
+                              <div class="card-content ">
+                                <span class="card-title"><h5 class="cardsheading">Countries with the Best Parental Leave Policies</h5></span>
+                                
+                              </div>
+                              <div class="card-action">
+                                  
+                                <p><i class="material-icons left">remove_red_eye</i>Write a comment<!--<i class="material-icons right">favorite_border</i>-->  </p>
+                              </div>
+                            </div>
+                          </div>
+    
+    
+    
+              </div>
+            </div>
+            <div class="center-align"><a class="waves-effect waves-light btn-large pink">Read More</a></div>
+                      
+    <!--BLUE DIV -->
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col l12 12 #01579b light-blue darken-4 white-text center-align birddiv"><h3 class="birdheading">I am no bird; and no net ensnares me; I am a free
+                    human being with an independent will. </h3>
+                    <p class="birdpara"> Charlotte Bronte, Jane Eyre</p>
+                </div>
+              </div>
+            </div>
+      <!--UPCOMING EVENTS COLLECTION-->
+            <div ><h2 class="center-align scrollspy" id="events" style="font-weight: bold">Upcoming Events</h2><br></div>
+            <div class="collection-wrapper">
+                <ul class="collection with-header container">
+                    
+                    <li class="collection-item">
+                        <div class="collection-div-1" ><a class="black-text" href="#"  id="collection-link1"><sup>Mon</sup><span class="date">19</span><sub>Dec</sub>Lecture: The Grand pay Gap/<span class="san-frans">San Fransisco</span><i class="material-icons">keyboard_arrow_down</i></a>
+                                <a href="#" class="secondary-content">
+                                    <a class="btn btn-small pink right btn-register">Register Now</a>
+                                </a>
+                            </div>
+                            <div class="onclick-collection1">
+                                <p>Dec 19, 2022, 8:00 PM<br>San Francisco, San Francisco, CA, USA</p>
+                                    <p>I’m an event title. Click here to open up the Event Editor and change my text.</p>
+                            </div>
+                        </li>
+                </ul>
+            </div>
+    
+        <div class="collection-wrapper">
+            <ul class="collection with-header container">
+                
+                <li class="collection-item">
+                    <div class="collection-div-2" ><a class="black-text" href="#"  id="collection-link2"><sup>Sat</sup><span class="date">23</span><sub>Sep</sub>10K Against Breast Cancer/<span class="san-frans">San Fransisco</span><i class="material-icons">keyboard_arrow_down</i></a>
+                            <a href="#" class="secondary-content">
+                                <a class="btn btn-small pink right btn-register">Register Now</a>
+                            </a>
+                        </div>
+                        <div class="onclick-collection2">
+                            <p>Sep 23, 2023, 7:00 PM<br>
+                                San Francisco, San Francisco, CA, USA</p>
+                                <p>I’m an event title. Click here to open up the Event Editor and change my text.</p>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+    
+        <div class="collection-wrapper">
+            <ul class="collection with-header container">
+                
+                <li class="collection-item">
+                    <div class="collection-div-3" ><a class="black-text" href="#"  id="collection-link3"><sup>Mon</sup><span class="date">20</span><sub>Nov</sub>Women Engineers Teach Javascript/<span class="san-frans">San Fransisco</span><i class="material-icons">keyboard_arrow_down</i></a>
+                            <a href="#" class="secondary-content">
+                                <a class="btn btn-small pink right btn-register">Register Now</a>
+                            </a>
+                        </div>
+                        <div class="onclick-collection3">
+                            <p>Nov 20, 2023, 9:00 PM<br>
+                                San Francisco, San Francisco, CA, USA</p>
+                                <p>I’m an event title. Click here to open up the Event Editor and change my text.</p>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+    
+
+        <!--MY JOIN US-->
+    <div class="container-fluid joinus scrollspy" id="join">
+      <div class="row flex">
+          <div class="col l5 s12 #01579b light-blue darken-4 white-text center-align joinus-div">
+              <h2 class="center"><b>Join Us</b></h2>
+                    <h5 class="center ">Empower Our Women And Girls</h5>
+              <div class="center-align"><br> <a class=" waves-light btn #ec5e87 pink lighten-1">DONATE NOW</a></div>
+              <!-- The social media icon bar -->
+              <div class="icon-bar-2 #1a237e indigo darken-4">
+                <a href="https://www.facebook.com/wix" class="facebook"><i class="fa fa-facebook"></i></a> 
+                <a href="https://twitter.com/wix" class="twitter"><i class="fa fa-twitter"></i></a> 
+                <a href="https://www.youtube.com/user/Wix" class="youtube"><i class="fa fa-youtube"></i></a> 
+                <a href="https://www.instagram.com/wix/" class="instagram"><i class="fa fa-instagram"></i></a> 
+            </div>
+          </div>
+          <div class="col l7 s12 joinus-img-div ">
+              <div>
+                  <img src="qoya.jpg" class="responsive-img joinus-img">
+              </div>
+          </div>
+      </div>
+  </div>
+<!--MY SIGNUP-->
+<div class="container-fluid scrollspy" id="contact">
+  <div class="row">
+      <div class="col l3 s12 women-pwr">
+          <h6><span class="signup-email">Women PWR</span></h6>
+          <p class=>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+          <div class="women">
+                                <p class="black-text"><span><b>Email</b></span>: info@mysite.com</p>
+                                <p class="black-text"><span><b>Phone</b></span>: 123-456-7890</p>
+                                <p class="black-text"><span><b>Registered Charity</b></span>: 12345-67</p>
+                            </div>
+      </div>
+
+      <div class="col l6 s12 signup-div">
+      
+          <h6><span class="signup-email">Get Monthly Updates</span></h6>
+
+          <form action="">
+              <div class="input-field">
+                  <i class="material-icons prefix" style="color: hotpink">email</i>
+                  <input type="email" id="email">
+                  <label for="email">Enter Email</label>
+              </div>
+              <div class="center-align signup-btn-div">
+                  <a class="waves-light btn #ec5e87 pink lighten-1">Sign Up</a>
+              </div>
+          </form>
+          
+          
+
+      </div>
+
+      <div class="col l3 s12 quick-links">
+          <h6><span class="signup-email">Quick Links</span></h6>
+          <ul>
+                  <li><a href="#contact" class="black-text">About</a></li>
+                  <li><a href="#join" class="black-text">Support Us</a></li>
+                  <li><a href="#news" class="black-text">News</a></li>
+                  <li><a href="#events" class="black-text">Events</a></li>
+                  <li><a href="#contact" class="black-text">Contact Us</a></li>
+          </ul>
+      </div>
+
+  </div>
+</div>
+
+<!--FOOTER-->
+<footer>
+<div class="center #1a237e indigo darken-4 white-text footer-div">
+  <p>&copy; 2023 by Woman PWR. Proudly created By Mehwish Zafar |  Terms of Use  |   Privacy Policy</p>
+</div>
+</footer>
+<!--MESSAGE ICON-->
+
+<div class="container center ">
+  <a href="#message" class=" btn btn-large pink modal-trigger msg-btn"><i class="material-icons" style="font-size: 40px">message</i></a> 
+</div>
+<div class="modal modal-div #fce4ec pink lighten-5" id="message">
+<div class="pink center white-text">
+   <i class="material-icons happy-icon ">tag_faces</i>
+   <p class="chat-para1">Let's Chat!</p>
+   <p class="chat-para2">Hi there! I am available to the questions you have.</p><br>
+</div>
+<div class="chat-popup #fce4ec pink lighten-5 center-align" id="myform">
+   <form action="" class="form-container">
+       <input type="file" id="real-file" hidden="hidden">
+       <div class="center-align">
+       <i class="material-icons left" id="emoji">tag_faces</i>
+       
+       <textarea name="msg" placeholder="Type Your Message" class="text-area" required></textarea>
+       <i class="material-icons right" id="custom-button">attach_file</i></div>
+   </form>
+   <button class="btn btn-small pink modal-close" type="submit" id="">Send</button>
+</div>
+</div>
+
+
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <!-- Compiled and minified JavaScript -->
+         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="jquery.min.js"></script>
+        <script src="dist/emojionearea.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script type="text/javascript">
+          const realFileBtn = document.getElementById("real-file");
+          const customBtn = document.getElementById("custom-button");
+          customBtn.addEventListener("click", function() {
+              realFileBtn.click();
+          });
+      </script>
+    </body>
+
+</html>
